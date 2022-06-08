@@ -1,0 +1,24 @@
+
+http://workers.cloudflare.com/
+
+npm i -g wrangler
+wrangler init <app-name>
+
+npm start
+wrangler dev --local
+npm run deploy
+
+https://upstash.com/
+https://planetscale.com/
+
+// routes
+npm i @upstash/redis   
+npm i worktop
+
+
+// set protected variables into wrangler
+wranger secret put <key>
+then, pass the <value>
+
+// see wrangler secret list
+
