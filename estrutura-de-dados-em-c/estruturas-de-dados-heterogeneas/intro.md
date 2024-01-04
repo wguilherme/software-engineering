@@ -223,3 +223,66 @@ A figura acima apresenta uma memória que armazena a variável “x” e o ponte
 No exemplo, o valor da variável “x” é 100 e esse dado está armazenado no endereço de memória 300. Como o ponteiro também ocupa espaço, o endereço de memória da variável “x” está armazenado no endereço 320 da memória, que é a posição de memória alocada para o ponteiro.
 
 Uma das características importantes de um ponteiro é que, utilizando ponteiros, podemos realizar o acesso indireto a outras variáveis, isto é, podemos ler ou alterar o conteúdo de uma variável sem utilizar o nome desta variável.
+
+
+### Declaração
+
+Os ponteiros são declarados pelo símbolo “*” entre o tipo e o nome da variável. A forma geral da declaração é:
+
+```
+Tipo_da_variável * Nome_da_Variável;
+```
+
+Exemplos:
+
+- int *p;
+- float *q;
+- char *r;
+
+As variáveis p, q e r são apontadores (ponteiro) para um inteiro, float e caractere, respectivamente.
+
+
+### Operadores
+
+Vejamos dois tipos de operadores:
+
+- Operador unário “&” ou ponteiro constante ‒ Tem a função de obter o endereço de memória de uma variável.
+- Operador unário “*” de indireção ‒ É usado para fazer a deferência
+
+Para entendermos melhor, observe o Exemplo 2. Neste trecho de código, temos a definição de uma variável inteira e de um ponteiro para o tipo de dados inteiro.
+
+```c
+int x = 5;
+int *pt_x;
+
+/* Ponteiro pt_x recebe o endereço de memória da variável x */
+pt_x = &x;
+```
+
+O ponteiro “pt_x” recebe o endereço de memória da variável “x” pela instrução: 
+
+```c
+pt_x = &x;
+```
+
+Agora, o ponteiro pt_x terá armazenado o endereço de memória da variável x. Portanto, manusear o ponteiro pt_x estará manipulando, indiretamente, a variável x.
+
+Para acessar o conteúdo do endereço armazenado no ponteiro, basta utilizar o operador ‘*’ antes do nome do ponteiro.
+
+```c
+*pt_x
+```
+
+Agora, considere a instrução apresentada abaixo. Note que o valor da variável “x” é alterado pelo ponteiro “pt_x”.
+
+```c
+*pt_x = 50;
+```
+
+Podemos observar que o conteúdo da variável “x” foi alterado de forma indireta, ou seja, não foi feita referência ao nome da variável “x”. Neste caso, o ponteiro é chamado de ponteiro variável, pois assim é possível armazenar qualquer endereço.
+
+
+#### Indireção múltipla
+
+
+
