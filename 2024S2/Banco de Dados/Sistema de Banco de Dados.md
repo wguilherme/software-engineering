@@ -215,22 +215,70 @@ O estudo de bancos de dados NoSQL está fora do escopo deste tema, constituindo-
 #### Saiba mais
 **Confira a lista de multimodelos**
 
-Chave-Valor: Redis, Amazon DynamoDB, Microsoft Azure CosmosDB.
-Documentos: MongoDB, Amazon DynamoDB, Microsoft Azure CosmosDB.
-Séries temporais: InfluxDB, KDB+, Prometheus.
-Grafos: Neo4J, Microsoft Azure CosmosDB, ArangoDB.
-Orientado a objetos: InterSystems Caché. Versant Object Database, ObjectStore.
-Motores de busca: Elasticsearch, Splunk, Solr.
-RDF (Resource Description Framework): Marklogic, Apache Jena, Virtuoso.
-Colunar: Cassandra, HBase, Microsoft Azure CosmosDB.
-Multivalores: Adabas, UniData/UniVerse, jBASE.
-XML nativo: Marklogic, Oracle Berkeley DB, Virtuoso.
-Eventos: Event Store, IBM DB2 Event Store, NEventStore.
-Conteúdos: JackRabbit, ModeShape.
-Navegacional: IMS, IDMS.
+- Chave-Valor: Redis, Amazon DynamoDB, Microsoft Azure CosmosDB.
+- Documentos: MongoDB, Amazon DynamoDB, Microsoft Azure CosmosDB.
+- Séries temporais: InfluxDB, KDB+, Prometheus.
+- Grafos: Neo4J, Microsoft Azure CosmosDB, ArangoDB.
+- Orientado a objetos: InterSystems Caché. Versant Object Database, ObjectStore.
+- Motores de busca: Elasticsearch, Splunk, Solr.
+- RDF (Resource Description Framework): Marklogic, Apache Jena, Virtuoso.
+- Colunar: Cassandra, HBase, Microsoft Azure CosmosDB.
+- Multivalores: Adabas, UniData/UniVerse, jBASE.
+- XML nativo: Marklogic, Oracle Berkeley DB, Virtuoso.
+- Eventos: Event Store, IBM DB2 Event Store, NEventStore.
+- Conteúdos: JackRabbit, ModeShape.
+- Navegacional: IMS, IDMS.
 
 #### Comentário
 
 O modelo navegacional é exatamente aquele dos primórdios dos sistemas de banco de dados, da década de 1960, antes do advento do modelo relacional, cujos produtos ainda continuam sendo utilizados, principalmente em sistemas de informação legados daquela época.
 
 Para fechar o módulo, neste vídeo o professor Sidney Ventury aprofundará o conteúdo falando um pouco mais sobre as vantagens que o Banco de Dados trouxe em relação ao antigo sistema de arquivos.
+
+###### Anotações sobre o vídeo
+
+- Dado é o elemento bruto
+- A informação é pegar o dado, processar e produzir um conhecimento (algo útil para o usuário)
+- Dados são muito importantes, todas empresas sempre trabalharam com dados
+- Banco de dados pode ser qualquer repositório de dados, pode ser fichários de papel antigos, controle de estoque, controle de dados
+- A diferença é que no mundo de hoje isso tudo foi informatizado. Dificilmente você vai trabalhar com uma ficha na mão.
+- Ao longo da história da informática, diversas tecnologias foram utilizadas para armezar dados
+- Na década de 60, se trabalhava muito com sistemas de arquivos
+  - Ex.: Programa 1, Programa 2, Programa 3 - Cada um deles tinha seu sistema de arquivos
+  - Uma linguagem muito utilizada era o COBOL, ele tinha o seu formato proprietário de arquivos
+  - Dentro do programa você definia a estrutura do arquivo
+    - Vinculava a posição física (HD/Disco) ao programa. O programa ia fisicamente no disco.
+    - O programa 3 não conseguia ler o dado do programa 1 por ex.
+    - Problemas
+      - Redundância de dados, tinha que ficar replicando o mesmo dado. Corria risco de gravar info diferente em um
+      - Inconsistência
+      - Desperdício de espaço
+      - Dependência entre programas e dados. A estrutura de dados era definido no corpo do programa
+        - Precisava saber onde o dado estava fisicamente
+      - Custo excessivo em softwaqre - Custo resultante da criação, documentação e acompanhamento de arquivos e aplicações diferentes.
+- Foi proposto o sistema de banco de dados DBMS -Database Management System
+  - Um único banco de dados, com os dados de todas aplicações, podendo os dados serem compartilhados
+    - App1, App2, App3 - Trabalham com dados semânticos e não o dado físico. A aplicação não sabe onde o dado está fisicamente, ela interage com as tabelas.
+    - Dados e o catálogo (ou metadados (dados sobre os dados - ex.: quais tabelas eu tenho, quais colunas, qual tipo de coluna, etc))
+    - SGBD - manipular consultas, operações, armazenamento
+    - Sistema de banco de dados é composto por:
+      - Base de dados
+      - SGDB
+      - Aplicações
+- Evolução dos SGDBs
+  - 62: TOTA, Rede Ilimitado
+  - 66: IMS, Hierárquico
+  - 70: IDMS, Rede
+  - 74: Sistema R (Relacional), DATACOM, ADABAS
+  - 78: INGRES, ORACLE (Relacionais)
+  - 82: DB2, Relacional
+  - 90: Ontos, O2, Postgres
+  - 94: OO/OR
+  - 98: SGBDs 'Universais'
+  - 04: NOSQL
+- Principais SGDBS Relacionais
+  - Oracle
+  - SQL Server
+  - PostgreSQL
+  - MySQL
+- 
