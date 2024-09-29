@@ -213,4 +213,91 @@ A equipe de desenvolvimento constrói os modelos que julga pertinentes para que 
 A equipe de desenvolvimento se reúne com os usuários, apresentando e discutindo os modelos construídos, visando validá-los e responder à pergunta base: os modelos que construímos representam de fato a realidade dos usuários? Em caso positivo, prossegue-se no desenvolvimento; caso contrário, os modelos são ajustados e confirmados novamente com os usuários, até que estejam adequados. Esse momento acontece nas fases de requisitos, análise e projeto.
 
 
+## Conceitos e pilares de análise e projeto orientados a objetos
 
+### Orientação a objetos
+
+Compreender os princípios fundamentais desse paradigma de desenvolvimento permite aos profissionais de tecnologia criarem sistemas modulares, flexíveis e de fácil manutenção. Além disso, a adoção de uma abordagem orientada a objetos promove a reutilização de código, a modularidade e a escalabilidade dos sistemas, contribuindo significativamente para a qualidade e a eficácia dos projetos de software. O conhecimento teórico nessa área é essencial para impulsionar a excelência na engenharia de software.
+
+Entenda neste vídeo o paradigma orientado a objetos, que visualiza um sistema de software como uma coleção de agentes interconectados chamados objetos.
+
+### Paradigma orientado a objetos
+
+Vamos analisar agora os conceitos, pilares, princípios e as orientações do paradigma orientado a objetos. Veremos também as visões, os objetivos e as entregas dos momentos de análise, projeto e implementação (em camadas), independentemente de processo ou metodologia de desenvolvimento de software.
+
+Com o aumento do tamanho do código e da complexidade dos programas, o paradigma estruturado, que antecedeu o paradigma orientado a objetos, começou a apresentar limitações nos sistemas sob o ponto de vista da dificuldade de manutenção e reúso de programas e rotinas padronizadas.
+
+Vamos, inicialmente, definir o termo paradigma como a maneira de abordar um problema.
+
+A orientação a objetos surge como solução para esses problemas, possibilitando uma maior organização, reutilização e extensibilidade de código por meio de propriedades como abstração, encapsulamento, herança e polimorfismo. Isso resulta em programas mais fáceis de serem escritos e mantidos.
+
+O principal foco do paradigma orientado a objetos é permitir o desenvolvimento de sistemas de forma mais rápida e confiável.
+
+Um dos pioneiros do paradigma orientado a objetos, Alan Kay, imaginou um sistema como um conjunto de agentes autônomos, os objetos, que interagem entre si. Ele estabeleceu os princípios centrais da orientação a objetos. Vejamos!
+
+1 - Qualquer coisa do mundo real é um objeto.
+2 - Objetos realizam tarefas requisitando serviços a outros objetos.
+3 - Os objetos similares são agrupados em classes e cada objeto pertence a uma classe.
+
+A seguir, observe a definição sobre o paradigma da orientação a objetos.
+
+> O paradigma da orientação a objetos visualiza um sistema de software como uma coleção de agentes interconectados chamados objetos. Cada um deles é responsável por realizar tarefas específicas e, para cumprir com algumas das tarefas sob sua responsabilidade, um objeto pode ter que interagir com outros. É pela interação entre eles que uma tarefa computacional é executada. Um sistema de software orientado a objetos consiste, portanto, em objetos colaborando para realizar as funcionalidades desse sistema. É graças à cooperação entre os objetos que a computação do sistema se desenvolve. (Bezerra, 2015)
+
+#### Conceitos fundamentais da orientação a objetos
+
+A orientação a objetos enfatiza a identificação, a representação e a organização dos objetos necessários ao funcionamento de um sistema. Tem por base os conceitos de objetos, classes, operação, mensagem e estado, e está calcada em quatro pilares fundamentais: abstração, encapsulamento, herança e polimorfismo, discutidos na sequência.
+
+
+##### Objetos e classes
+
+Um objeto pode referenciar qualquer coisa do mundo real, por exemplo, um aluno, uma disciplina, um curso, um professor, entre outros, considerando um sistema acadêmico como contexto. Ou seja, um objeto é qualquer coisa do mundo real, de interesse no contexto em estudo.
+
+Quando analisamos os objetos pertinentes a um contexto, não estamos preocupados com um objeto específico, como o aluno José Carlos Aragão, e sim com todos os alunos envolvidos no estudo. Surge, então, o conceito de classe que, conceitualmente, reúne um conjunto de objetos com as mesmas propriedades. Ou seja, estamos interessados em todos os alunos e não apenas em José Carlos Aragão. Aplicando o princípio da abstração (que será detalhado posteriormente), uma classe reúne objetos com características ou propriedades semelhantes, que consistem em seus dados (atributos) e procedimentos (métodos) que implementam os serviços que essa classe oferece.
+
+A classe Aluno agrupa “José Carlos Aragão” e os demais alunos envolvidos. Um objeto é um elemento específico de uma classe, ou ainda uma instância de uma classe.
+
+As classes são, portanto, abstrações que definem uma estrutura que encapsula dados (chamados de atributos) e um conjunto de operações possíveis de serem usados, chamados de métodos. Por exemplo, a classe Aluno encapsula um conjunto de dados que identifique os alunos − matrícula, nome, endereço (rua, número, complemento, estado e CEP), CPF e identidade − e um conjunto de métodos: Incluir Aluno, Matricular Aluno, Cancelar Matrícula, entre outros.
+
+Resumindo, podemos definir classe e objeto da seguinte forma. Observe!
+
+**Classe**
+É abstração das características de um grupo de coisas do mundo real.
+
+**Objeto**
+É um elemento específico de uma classe ou uma instância de uma classe.
+
+Confira a representação de uma classe em três compartimentos: o nome da classe (Aluno), seus atributos (Matrícula... Identidade) e métodos (Incluir Aluno... Cancelar Matrícula).
+
+![Classe Aluno](image.png)
+
+
+Agora, veja a representação de dois objetos da classe Aluno.
+
+![Objetos (Aluno1 e Aluno2) da classe Aluno](image-1.png)
+
+
+##### Operação, mensagem e estado
+
+Um sistema orientado a objetos consiste na cooperação entre seus objetos. Cada um tem uma responsabilidade no sistema, correspondendo à parte das funcionalidades que lhes são atribuídas. Em outras palavras, uma tarefa computacional é realizada pela interação entre seus objetos, cada um executa parte da tarefa. Acompanhe!
+
+**Operação**
+É o nome dado a cada ação (função) que o objeto sabe realizar. Mas um objeto não realiza nenhuma ação sem uma motivação, sem um estímulo.
+
+**Mensagem**
+Estímulo que chega a um objeto e solicita que ele realize uma de suas operações. Uma operação pode ser implementada através de pelo menos um método. Em outras palavras, cada objeto presta um serviço. Quando um objeto precisa de um serviço da responsabilidade de outro, ele precisa enviar uma mensagem a ele. Cada mensagem ativa uma das operações do objeto.
+
+**Estado**
+Chama-se estado do objeto o conjunto de valores de seus atributos em dado momento. Uma mensagem enviada a um objeto pode (ou não) alterar o seu estado, na medida em que pode alterar um ou mais valores de seus atributos.
+
+Um sistema orientado a objetos funciona pela cooperação entre objetos, cada um responsável por parte das funcionalidades. Objetos realizam ações chamadas operações em resposta a estímulos chamados mensagens. O estado de um objeto é determinado pelos valores de seus atributos, que podem ser alterados pelas mensagens recebidas.
+
+
+###### Objeto
+
+Imagine, por exemplo, que o objeto Notas_Aluno contenha as notas do aluno em determinada disciplina. Em dado momento, é recebida uma mensagem informando uma nova nota a ser armazenada. O estado desse objeto foi alterado, pois um de seus atributos recebeu a nova nota.
+
+Agora, suponha que determinado objeto enviou uma mensagem a Notas_Aluno solicitando que seja exibida a média atual; nesse caso, não houve alteração de estado, pois as notas foram consultadas, e a média foi calculada (não fica armazenada) e exibida.
+
+Observe a seguir como se comporta as partes de um objeto ao receber a mensagem.
+
+![Partes de um objeto.](image-2.png)
