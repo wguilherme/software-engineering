@@ -1,5 +1,16 @@
 # Introdução à disciplina de Algoritmos e Complexidade
 
+
+Análise de algoritmo: aprender a analisar algoritmos, suas estruturas de dados e a complexidade computacional. Compreender a notação O e como avaliar o desempenho de algoritmos, otimizando soluções para problemas computacionais.
+ 
+Recursividade: compreender a recursividade e suas aplicações, diferenciando-a de algoritmos iterativos. Identificar quando usar funções recursivas de maneira eficiente e evitar problemas de desempenho.
+ 
+Algoritmos de ordenação avançados: entender como implementar algoritmos avançados de ordenação, como merge sort, quick sort e shell sort. Compreender suas complexidades para selecionar o mais eficiente, otimizando o desempenho de programas e sistemas computacionais.
+ 
+Algoritmos em árvores binárias e arvores AVL: aprender a implementar algoritmos de busca, inserção e remoção em árvores binárias e AVL. Compreender a complexidade computacional dessas estruturas para otimizar sistemas, garantindo eficiência na manipulação de dados em grandes volumes.
+ 
+Algoritmos em grafos: analisar os conceitos e algoritmos de grafos, incluindo busca, caminho mínimo e o problema do caixeiro-viajante. Aplicar essas técnicas para otimizar soluções em problemas reais, como redes sociais e definição de rotas de transporte.
+
 A disciplina "Algoritmos e Complexidade" que você está prestes a iniciar desempenha um papel fundamental, ela vai te ensinar a como “medir a potência de um algoritmo”. Ou seja, vai te ajudar a classificar algoritmos indicando os mais rápidos.
 
 Nossos objetivos nesta disciplina estão intrinsecamente ligados à sua formação e ao seu desenvolvimento profissional. Vamos explorar esses objetivos de maneira integrada, para que você compreenda sua importância.
